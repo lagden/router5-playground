@@ -14,19 +14,6 @@ require(['./config'], function () {
 			output.textContent = state.name;
 		}
 
-		// Links
-		// var as = document.querySelectorAll('a');
-		// var links = Array.prototype.slice.call(as);
-
-		// // Avoid normal behavior
-		// links.forEach(a => {
-		// 	a.addEventListener('click', event => {
-		// 		event.preventDefault();
-		// 		var ca = event.currentTarget;
-		// 		router.navigate(ca.dataset.route, {}, {replace: true}, navigateHandler);
-		// 	});
-		// });
-
 		// router listener
 		function routeHandler(toState, fromState) {
 			console.log(toState, fromState);
