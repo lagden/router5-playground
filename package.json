@@ -1,0 +1,35 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "Apenas um show",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Thiago Lagden",
+  "license": "Unlicense",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "requirejs": "^2.1.22",
+    "router5": "^2.0.4",
+    "router5-history": "^2.0.0",
+    "router5-listeners": "^2.0.0",
+  },
+  "xo": {
+    "envs": [
+      "es6",
+      "browser",
+      "node"
+    ],
+    "esnext": true,
+    "global": [
+      "window",
+      "document",
+      "requirejs",
+      "require",
+      "define"
+    ]
+  }
+}
