@@ -16,7 +16,7 @@ require(['./config'], function () {
 		}
 
 		// -----> workaround <-----
-		linksBehavior(router);
+		// linksBehavior(router);
 
 		router.addRouteListener('home', routeHandler);
 		router.addRouteListener('about', routeHandler);

@@ -1,7 +1,6 @@
 /* eslint prefer-arrow-callback: 0 */
 /* eslint no-var: 0 */
-/* eslint no-unused-vars: 0 */
-/* eslint prefer-reflect: 0 */
+/* eslint new-cap: 0 */
 'use strict';
 
 (function (root, factory) {

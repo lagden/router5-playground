@@ -1,8 +1,5 @@
-/* globals initialState */
-
 /* eslint no-var: 0 */
 /* eslint prefer-arrow-callback: 0 */
-/* eslint no-unused-vars: 0 */
 'use strict';
 
 define([], function () {
@@ -10,9 +7,7 @@ define([], function () {
 		function navigateHandler(event) {
 			event.preventDefault();
 			var ca = event.currentTarget;
-			router.navigate(ca.dataset.route, {}, {
-				replace: true
-			});
+			router.navigate(ca.dataset.route, {}, {replace: true});
 		}
 		var links = document.querySelectorAll('a');
 		Array.prototype.slice.call(links).forEach(function (a) {
