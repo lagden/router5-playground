@@ -15,7 +15,7 @@
     "requirejs": "^2.1.22",
     "router5": "^2.0.4",
     "router5-history": "^2.0.0",
-    "router5-listeners": "^2.0.0",
+    "router5-listeners": "^2.0.0"
   },
   "xo": {
     "envs": [
