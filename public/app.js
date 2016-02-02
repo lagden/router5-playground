@@ -6,17 +6,13 @@
 'use strict';
 
 require(['./config'], function () {
-	require(['./router', './workaround'], function (router, linksBehavior) {
+	require(['./router'], function (router) {
 		var output = document.querySelector('#page');
 
-		// router listener
 		function routeHandler(toState, fromState) {
 			output.textContent = toState.name;
 			console.debug('>>>', toState.name);
 		}
-
-		// -----> workaround <-----
-		// linksBehavior(router);
 
 		router.addRouteListener('home', routeHandler);
 		router.addRouteListener('about', routeHandler);

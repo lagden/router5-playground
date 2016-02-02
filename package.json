@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "r.js -convert node_modules/router5-link-interceptor/ node_modules/router5-link-interceptor/amd",
+    "prestart": "npm run convert",
     "start": "node index.js"
   },
   "author": "Thiago Lagden",
@@ -15,6 +17,7 @@
     "requirejs": "^2.1.22",
     "router5": "^2.0.4",
     "router5-history": "^2.0.0",
+    "router5-link-interceptor": "^3.0.0",
     "router5-listeners": "^2.0.0"
   },
   "xo": {

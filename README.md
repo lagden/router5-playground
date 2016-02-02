@@ -1,6 +1,6 @@
 # Playground
 
-> Just a router5 test
+> Just for fun
 
 ## Usage
 

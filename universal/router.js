@@ -8,7 +8,8 @@
 		define([
 			'router5',
 			'router5HistoryPlugin',
-			'router5ListenersPlugin'
+			'router5ListenersPlugin',
+			'router5LinkInterceptorPlugin'
 		], factory);
 	} else {
 		module.exports = factory(
@@ -17,7 +18,7 @@
 			require('router5-listeners')
 		);
 	}
-})(this, function (router5, historyPlugin, listenersPlugin) {
+})(this, function (router5, historyPlugin, listenersPlugin, linkInterceptorPlugin) {
 	var router = new router5.default()
 		.setOption('useHash', false)
 		.setOption('trailingSlash', true)
@@ -29,6 +30,10 @@
 		.addNode('home', '/home')
 		.addNode('about', '/about')
 		.addNode('404', '/404');
+
+	if (linkInterceptorPlugin || false) {
+		router.usePlugin(linkInterceptorPlugin({}));
+	}
 
 	return router;
 });
