@@ -7,7 +7,7 @@
 'use strict';
 
 require(['./config'], function () {
-	require(['jquery/core', 'jquery/ajax/xhr'], function ($) {
+	require(['jquery/ajax', 'jquery/ajax/xhr'], function ($) {
 		// Output
 		var $out = $('#out');
 		// Callback

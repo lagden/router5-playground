@@ -6,7 +6,7 @@ define('config', function () {
 	requirejs.config({
 		baseUrl: '/',
 		paths: {
-			sizzle: '/sizzle/dist/sizzle',
+			sizzle: '/sizzle/dist/sizzle.min',
 			jquery: '/jquery/src'
 		}
 	});
