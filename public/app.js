@@ -2,14 +2,24 @@
 
 /* eslint no-var: 0 */
 /* eslint prefer-arrow-callback: 0 */
+/* eslint babel/object-shorthand: 0 */
 /* eslint no-unused-vars: 0 */
 'use strict';
 
 require(['./config'], function () {
-	require(['jquery/ajax'], function ($) {
-		console.log('test ajax');
-		console.dir($.getJSON);
-		$.getJSON('http://randomuser.me/g/', {seed: 'awesome'}, console.log);
-		$.get('http://localhost:8080/home');
+	require(['jquery/core', 'jquery/ajax/xhr'], function ($) {
+		// Output
+		var $out = $('#out');
+		// Callback
+		function cb(r) {
+			$out[0].textContent = JSON.stringify(r);
+		}
+		// Test Ajax
+		$.getJSON('http://randomuser.me/g/')
+			.done(cb)
+			.fail(cb)
+			.always(r => {
+				console.log('sempre!!!');
+			});
 	});
 });
