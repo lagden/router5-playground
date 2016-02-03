@@ -7,12 +7,7 @@ define('config', function () {
 		baseUrl: '/',
 		paths: {
 			sizzle: '/sizzle/dist/sizzle',
-			ajax: '/jquery/src/ajax'
-		},
-		map: {
-			'*': {
-				'ajax': 'jquery/src/ajax'
-			}
+			jquery: '/jquery/src'
 		}
 	});
 });

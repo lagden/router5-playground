@@ -6,9 +6,10 @@
 'use strict';
 
 require(['./config'], function () {
-	require(['ajax'], function ($) {
+	require(['jquery/ajax'], function ($) {
 		console.log('test ajax');
 		console.dir($.getJSON);
 		$.getJSON('http://randomuser.me/g/', {seed: 'awesome'}, console.log);
+		$.get('http://localhost:8080/home');
 	});
 });
