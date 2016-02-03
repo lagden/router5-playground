@@ -7,10 +7,4 @@ html(lang='en-US')
       a(href="/home", data-route='home') Home
       br
       a(href="/about", data-route='about') About
-    hr
-    .output
-      | You have navigated to 
-      span#page
-    script.
-      var initialState = JSON.parse('!{initialState}');
     script(async, src='/requirejs/require.js', data-main='/app')
