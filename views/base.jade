@@ -3,10 +3,9 @@ html(lang='en-US')
   head
     title Example Server-side Routing
   body
-    nav
-      a(href="/home", data-route='home') Home
-      br
-      a(href="/about", data-route='about') About
-    hr
+    h1 Apenas um show!
     #out
-    script(async, src='/requirejs/require.js', data-main='/app')
+    if (isDev)
+      script(async, src='/requirejs/require.js', data-main='/js/app')
+    else
+      script(async, src='/bundle.min.js')

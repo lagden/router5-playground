@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "NODE_ENV=production node index.js",
     "start": "node index.js"
   },
   "author": "Thiago Lagden",
@@ -12,9 +13,8 @@
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0",
-    "jquery": "https://github.com/jquery/jquery/tarball/master",
-    "requirejs": "^2.1.22",
-    "sizzle": "^2.3.0"
+    "jquery": "^2.2.1",
+    "requirejs": "^2.1.22"
   },
   "xo": {
     "envs": [
@@ -30,5 +30,12 @@
       "require",
       "define"
     ]
+  },
+  "devDependencies": {
+    "almond": "^0.3.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-symlink": "^1.0.0",
+    "jit-grunt": "^0.10.0"
   }
 }
