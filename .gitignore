@@ -1,2 +1,4 @@
+public/bundle.*
+public/js/jquery
 node_modules
 *.log
