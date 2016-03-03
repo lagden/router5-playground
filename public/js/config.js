@@ -1,5 +1,4 @@
 /* eslint prefer-arrow-callback: 0 */
-
 'use strict';
 
 define('config', function () {

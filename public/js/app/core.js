@@ -1,9 +1,6 @@
-/* globals initialState */
-
 /* eslint no-var: 0 */
 /* eslint prefer-arrow-callback: 0 */
 /* eslint babel/object-shorthand: 0 */
-/* eslint no-unused-vars: 0 */
 'use strict';
 
 define(['jquery/ajax', 'jquery/ajax/xhr'], function ($) {
@@ -19,7 +16,7 @@ define(['jquery/ajax', 'jquery/ajax/xhr'], function ($) {
 	$.getJSON('http://randomuser.me/g/')
 		.done(cb)
 		.fail(cb)
-		.always(function (r) {
+		.always(function () {
 			console.log('sempre!!!');
 		});
 });
