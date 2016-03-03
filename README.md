@@ -1,10 +1,22 @@
 # Playground
 
-> Just for fun
+> Regular show
 
-## Usage
+## Instal
 
 ```
 npm i
+```
+
+## Dev
+
+```
+npm run dev
+```
+
+## Prod
+
+```
 npm start
 ```
+
