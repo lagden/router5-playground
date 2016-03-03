@@ -10,7 +10,10 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(express.static('node_modules'));
+if (isDev) {
+	app.use(express.static('node_modules'));
+}
+
 app.use(express.static('public'));
 
 app.get('*', (req, res) => {
